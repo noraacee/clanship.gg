@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clan Ship</title>
+<link rel="icon" type="image/png" href="favicon.png"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+<link rel="stylesheet" href="index.css">
+<header>
+  <div class="title">
+      <h1>Clan Ship</h1>
+  </div>
+  <div class="actions">
+      <svg class="action action-reset">
+        <use xlink:href="imgs/icons.svg#reset"/>
+      </svg>
+      <svg class="action action-settings">
+        <use xlink:href="imgs/icons.svg#settings"/>
+      </svg>
+      <svg class="action action-saveload">
+        <use xlink:href="imgs/icons.svg#saveload"/>
+      </svg>
+      <svg class="action action-share">
+        <use xlink:href="imgs/icons.svg#share"/>
+      </svg>
+  </div>
+  <div class="dialog-bg">
+    <div class="dialog">
+      <h2 class="dialog-title"></h2>
+      <h5 class="dialog-error"></h5>
+      <p class="setting-details"></p>
+      <div class="dialog-setting setting-input">
+        <button class="dialog-name">
+          <h5></h5>
+          <div class="dialog-checkbox sprites"></div>
+        </button>
+        <input type="text" class="dialog-input">
+      </div>
+      <div class="dialog-setting setting-input">
+        <button class="dialog-name">
+          <h5></h5>
+          <div class="dialog-checkbox sprites"></div>
+        </button>
+        <input type="text" class="dialog-input">
+      </div>
+      <h5 class="setting-text"></h5>
+      <textarea class="setting-text-area"></textarea>
+      <div class="setting-options"></div>
+      <div class="dialog-btns">
+        <button class="dialog-btn"></button>
+        <button class="dialog-btn"></button>
+      </div>
+    </div>
+  </div>
+</header>
+<nav>
+  <button class="nav-btn">
+    <svg class="nav-menu">
+      <use xlink:href="imgs/icons.svg#menu"/>
+    </svg>
+    <svg class="nav-close">
+      <use xlink:href="imgs/icons.svg#close"/>
+    </svg>
+  </button>
+  <h5 class="nav-first nav-title nav-current" data-nav="0">SKILL TREE</h5>
+  <h5 class="nav-title nav-other" data-nav="1">ABOUT</h5>
+</nav>
+<main>
+  <section class="tab skill-tree">
+    <h2 class="tree-build">
+      <span>0</span> SP:
+      <span class="knight color-tree">0</span>
+      /
+      <span class="warlord color-tree">0</span>
+      /
+      <span class="sorcerer color-tree">0</span>
+      /
+      <span class="rogue color-tree">0</span>
+    </h2>
+    <div class="tree-nav">
+      <div class="tree-section knight">
+        <h2 class="tree-name color-tree">Knight</h2>
+        <svg class="tree-reset">
+          <use xlink:href="imgs/icons.svg#reset"/>
+        </svg>
+      </div>
+      <div class="tree-section warlord">
+        <h2 class="tree-name color-tree">Warlord</h2>
+        <svg class="tree-reset">
+          <use xlink:href="imgs/icons.svg#reset"/>
+        </svg>
+      </div>
+      <div class="tree-section sorcerer">
+        <h2 class="tree-name color-tree">Sorcerer</h2>
+        <svg class="tree-reset">
+          <use xlink:href="imgs/icons.svg#reset"/>
+        </svg>
+      </div>
+      <div class="tree-section rogue">
+        <h2 class="tree-name color-tree">Rogue</h2>
+        <svg class="tree-reset">
+          <use xlink:href="imgs/icons.svg#reset"/>
+        </svg>
+      </div>
+    </div>
+    <div class="trees">
+      <section class="tree-container knight">
+        <div class="tree-bg">
+          <div class="tree">
+            <div class="line line-h"></div>
+            <div class="line line-v3 line-col-l"></div>
+            <div class="line line-v2 line-col-c"></div>
+            <div class="line line-v3 line-col-r"></div>
+            <button class="tree-skill tree-f sprite-skills" data-grid="f">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l1 sprite-skills" data-grid="l1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l2 sprite-skills" data-grid="l2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l3 sprite-skills" data-grid="l3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c1 sprite-skills" data-grid="c1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c2 sprite-skills" data-grid="c2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r1 sprite-skills" data-grid="r1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r2 sprite-skills" data-grid="r2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r3 sprite-skills" data-grid="r3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+          </div>
+          <h3 class="tree-lvl color-tree">Knight Level: <span class="color-primary">0</span></h3>
+        </div>
+        <div class="skill">
+          <h3 class="skill-absolute skill-name"></h3>
+          <h6 class="skill-absolute skill-tier"></h6>
+          <h4 class="skill-absolute skill-extra"><span></span><span class="color-tree"></span></h4>
+          <button class="skill-absolute skill-close">
+            <svg class="skill-close-svg color-tree">
+              <use xlink:href="imgs/icons.svg#close"/>
+            </svg>
+          </button>
+          <div class="skill-absolute skill-img sprite-skills">
+            <div class="skill-sprite sprites"></div>
+            <button class="skill-sprite-close">
+              <svg class="skill-sprite-close-svg color-tree">
+                <use xlink:href="imgs/icons.svg#close"/>
+              </svg>
+            </button>
+          </div>
+          <div class="skill-absolute skill-info">
+            <h4></h4>
+            <h6 class="color-secondary"></h6>
+            <div class="skill-details color-secondary"></div>
+          </div>
+          <div class="skill-absolute skill-next">
+            <h4 class="color-tree"></h4>
+            <div class="skill-req">
+              <div class="skill-check sprites"></div>
+              <p class="skill-req-desc color-secondary"></p>
+              <div class="skill-check sprites skill-req-row2"></div>
+              <p class="skill-req-desc color-secondary skill-req-row2">Knight Level: <span></span></p>
+            </div>
+          </div>
+          <div class="skill-absolute skill-btns">
+            <button class="skill-btn skill-downgrade">
+              <div class="skill-btn-bg skill-locked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h4 class="skill-option">Downgrade</h4>
+            </button>
+            <button class="skill-btn skill-upgrade">
+              <div class="skill-btn-bg skill-unlocked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h3 class="skill-option"></h3>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="tree-container warlord">
+        <div class="tree-bg">
+          <div class="tree">
+            <div class="line line-h"></div>
+            <div class="line line-v3 line-col-l"></div>
+            <div class="line line-v1 line-col-c"></div>
+            <div class="line line-v3 line-col-r"></div>
+            <button class="tree-skill tree-f sprite-skills" data-grid="f">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l1 sprite-skills" data-grid="l1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l2 sprite-skills" data-grid="l2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l3 sprite-skills" data-grid="l3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c1 sprite-skills" data-grid="c1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r1 sprite-skills"" data-grid="r1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r2 sprite-skills" data-grid="r2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r3 sprite-skills"  data-grid="r3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+          </div>
+          <h3 class="tree-lvl color-tree">Warlord Level: <span class="color-primary">0</span></h3>
+        </div>
+        <div class="skill">
+          <h3 class="skill-absolute skill-name"></h3>
+          <h6 class="skill-absolute skill-tier"></h6>
+          <h4 class="skill-absolute skill-extra"><span></span><span class="color-tree"></span></h4>
+          <button class="skill-absolute skill-close">
+            <svg class="skill-close-svg color-tree">
+              <use xlink:href="imgs/icons.svg#close"/>
+            </svg>
+          </button>
+          <div class="skill-absolute skill-img sprite-skills">
+            <div class="skill-sprite sprites"></div>
+            <button class="skill-sprite-close">
+              <svg class="skill-sprite-close-svg color-tree">
+                <use xlink:href="imgs/icons.svg#close"/>
+              </svg>
+            </button>
+          </div>
+          <div class="skill-absolute skill-info">
+            <h4></h4>
+            <h6 class="color-secondary"></h6>
+            <h6 class="skill-details color-secondary"></h6>
+          </div>
+          <div class="skill-absolute skill-next">
+            <h4 class="color-tree"></h4>
+            <div class="skill-req">
+              <div class="skill-check sprites"></div>
+              <p class="skill-req-desc color-secondary"></p>
+              <div class="skill-check sprites skill-req-row2"></div>
+              <p class="skill-req-desc color-secondary skill-req-row2">Warlord Level: <span></span></p>
+            </div>
+          </div>
+          <div class="skill-absolute skill-btns">
+            <button class="skill-btn skill-downgrade">
+              <div class="skill-btn-bg skill-locked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h4 class="skill-option">Downgrade</h4>
+            </button>
+            <button class="skill-btn skill-upgrade">
+              <div class="skill-btn-bg skill-unlocked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h3 class="skill-option"></h3>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="tree-container sorcerer">
+        <div class="tree-bg">
+          <div class="tree">
+            <div class="line line-h"></div>
+            <div class="line line-v3 line-col-l"></div>
+            <div class="line line-v3 line-col-c"></div>
+            <div class="line line-v3 line-col-r"></div>
+            <button class="tree-skill tree-f sprite-skills" data-grid="f">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l1 sprite-skills" data-grid="l1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l2 sprite-skills" data-grid="l2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l3 sprite-skills" data-grid="l3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c1 sprite-skills" data-grid="c1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c2 sprite-skills" data-grid="c2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c3 sprite-skills" data-grid="c3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r1 sprite-skills"  data-grid="r1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r2 sprite-skills" data-grid="r2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r3 sprite-skills" data-grid="r3">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+          </div>
+          <h3 class="tree-lvl color-tree">Sorcerer Level: <span class="color-primary">0</span></h3>
+        </div>
+        <div class="skill">
+          <h3 class="skill-absolute skill-name"></h3>
+          <h6 class="skill-absolute skill-tier"></h6>
+          <h4 class="skill-absolute skill-extra"><span></span><span class="color-tree"></span></h4>
+          <button class="skill-absolute skill-close">
+            <svg class="skill-close-svg color-tree">
+              <use xlink:href="imgs/icons.svg#close"/>
+            </svg>
+          </button>
+          <div class="skill-absolute skill-img sprite-skills">
+            <div class="skill-sprite sprites"></div>
+            <button class="skill-sprite-close">
+              <svg class="skill-sprite-close-svg color-tree">
+                <use xlink:href="imgs/icons.svg#close"/>
+              </svg>
+            </button>
+          </div>
+          <div class="skill-absolute skill-info">
+            <h4></h4>
+            <h6 class="color-secondary"></h6>
+            <h6 class="skill-details color-secondary"></h6>
+          </div>
+          <div class="skill-absolute skill-next">
+            <h4 class="color-tree"></h4>
+            <div class="skill-req">
+              <div class="skill-check sprites"></div>
+              <p class="skill-req-desc color-secondary"></p>
+              <div class="skill-check sprites skill-req-row2"></div>
+              <p class="skill-req-desc color-secondary skill-req-row2">Sorcerer Level: <span></span></p>
+            </div>
+          </div>
+          <div class="skill-absolute skill-btns">
+            <button class="skill-btn skill-downgrade">
+              <div class="skill-btn-bg skill-locked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h4 class="skill-option">Downgrade</h4>
+            </button>
+            <button class="skill-btn skill-upgrade">
+              <div class="skill-btn-bg skill-unlocked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h3 class="skill-option"></h3>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="tree-container rogue">
+        <div class="tree-bg">
+          <div class="tree">
+            <div class="line line-h"></div>
+            <div class="line line-v2 line-col-l"></div>
+            <div class="line line-v2 line-col-c"></div>
+            <div class="line line-v2 line-col-r"></div>
+            <button class="tree-skill tree-f sprite-skills" data-grid="f">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l1 sprite-skills" data-grid="l1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-l2 sprite-skills" data-grid="l2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c1 sprite-skills" data-grid="c1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-c2 sprite-skills" data-grid="c2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r1 sprite-skills" data-grid="r1">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+            <button class="tree-skill tree-r2 sprite-skills" data-grid="r2">
+              <div class="tree-skill-shade"></div>
+              <div class="tree-skill-up sprites"></div>
+              <span class="tree-skill-lvl"></span>
+            </button>
+          </div>
+          <h3 class="tree-lvl color-tree">Rogue Level: <span class="color-primary">0</span></h3>
+        </div>
+       <div class="skill">
+          <h3 class="skill-absolute skill-name"></h3>
+          <h6 class="skill-absolute skill-tier"></h6>
+          <h4 class="skill-absolute skill-extra"><span></span><span class="color-tree"></span></h4>
+          <button class="skill-absolute skill-close">
+            <svg class="skill-close-svg color-tree">
+              <use xlink:href="imgs/icons.svg#close"/>
+            </svg>
+          </button>
+          <div class="skill-absolute skill-img sprite-skills">
+            <div class="skill-sprite sprites"></div>
+            <button class="skill-sprite-close">
+              <svg class="skill-sprite-close-svg color-tree">
+                <use xlink:href="imgs/icons.svg#close"/>
+              </svg>
+            </button>
+          </div>
+          <div class="skill-absolute skill-info">
+            <h4></h4>
+            <h6 class="color-secondary"></h6>
+            <h6 class="skill-details color-secondary"></h6>
+          </div>
+          <div class="skill-absolute skill-next">
+            <h4 class="color-tree"></h4>
+            <div class="skill-req">
+              <div class="skill-check sprites"></div>
+              <p class="skill-req-desc color-secondary"></p>
+              <div class="skill-check sprites skill-req-row2"></div>
+              <p class="skill-req-desc color-secondary skill-req-row2">Rogue Level: <span></span></p>
+            </div>
+          </div>
+          <div class="skill-absolute skill-btns">
+            <button class="skill-btn skill-downgrade">
+              <div class="skill-btn-bg skill-locked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h4 class="skill-option">Downgrade</h4>
+            </button>
+            <button class="skill-btn skill-upgrade">
+              <div class="skill-btn-bg skill-unlocked sprites"></div>
+              <h6 class="skill-points"></h6>
+              <h3 class="skill-option"></h3>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="tab about">
+    <div class="about-content">
+      <h2 class="about-title">Contact</h2>
+      <p class="about-short">Noraacee.Game@gmail.com</p>
+      <a class="about-short" href="https://reddit.com/user/noraacee-game">/u/Noraacee-Game</a>
+      <a class="about-short" href="https://reddit.com/">Reddit Post</a>
+      <h2 class="about-title">Support</h2>
+      <p class="about-detail">Please use the email written in the Contact section</p>
+      <a class="about-short" href="https://www.patreon.com/noraaceegame" target="_blank">Patreon</p>
+      <a class="about-short" href="https://www.paypal.me/noraaceegame" target="_blank">Paypal</p>
+      <a class="about-short" href="https://wallet.google.com" target="_blank">Google Wallet</a>
+      <h2 class="about-title">Upcoming Features</h2>
+      <p class="about-short">Multi-level Builds</p>
+      <p class="about-short">Pets</p>
+      <p class="about-short">Artifacts</p>
+      <h2 class="about-title">Suggestions</h2>
+      <p class="about-long">If you like to suggest new features or improvements, please post a comment on the Reddit post.</p>
+      <h2 class="about-title">Contribute</h2>
+      <p class="about-long">If you would like report bugs, mistakes or errors, or contribute formulas, builds or optimizers, please email me, message me on Reddit, or post a comment on the Reddit post.
+    </div>
+  </section>
+</main>
+<footer>
+  <h6 class="footer-info">Game Version: 2.6.4</h6>
+  <p class="footer-detail">Last updated: 02/20/2018</p>
+</footer>
+<script type="text/javascript" src="skills.js"></script>
+<script type="text/javascript" src="about.js"></script>
+<script type="text/javascript" src="index.js"></script>
