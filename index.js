@@ -512,11 +512,14 @@ var CLANSHIP = {
 		build: function() {
 			let share = "";
 			if (CLANSHIP.SESSION.n)
-				share += "n=" + CLANSHIP.SESSION.n + "&";
+				share += "n=" + CLANSHIP.SESSION.n;
 
 			let build = CLANSHIP.skillTree.actions.share();
-			if (build)
+			if (build) {
+				if (share.length > 0)
+					share += "&";
 				share += "b=" + build;
+			}
 
 			return share;
 		},
