@@ -528,7 +528,7 @@ var CLANSHIP = {
 			selection.removeAllRanges();
 			selection.addRange(range);
 			document.execCommand("copy");
-			CLANSHIP.SHARE.close();
+			CLANSHIP.DIALOG.close();
 		},
 
 		close: function() {
