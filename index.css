@@ -1095,7 +1095,10 @@ main
 	display: none;
 	top: 0;
 	height: 100%;
-	border-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 	background-color: var(--color);
 }
 
@@ -1105,7 +1108,6 @@ main
 	height: 100%;
 	fill: white;
 	transition: transform .1s;
-	border-radius: 0;
 }
 
 .skill-info 
