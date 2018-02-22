@@ -116,7 +116,7 @@ var SKILLTREE = {
 					"When Mana Siphon and Lightning Strike are unlocked, bonus taps per second will help activate these skills as well."],
 				stats: [["x# Active Tap Damage", "+# Bonus Taps Per Second"]],
 				multipliers: [
-					[2.5, 6.4, 18.6, 67.2, 298, 1750, 14200, 166000, 2810000, 72900000, 3090000000, 218000000000],
+					[2.5, 6.4, 18.6, 67.2, 298, 1750, 14200, 166000, 2810000, 72890000, 3090000000, 218000000000],
 					[1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 17, 20]]
 			}, 
 			c1: {
@@ -210,7 +210,7 @@ var SKILLTREE = {
 					["x# Pet Damage Per Zip Sequence", "-#s Cooldown"],
 					["x# Pet Dmg Per Zip Seq", null]],
 				multipliers: [
-					[1, 2.6, 7.3, 26.3, 115.4, 670.1, 5420, 63100, 1070000, 28200000, 1220000000, 89000000000],
+					[10, 26, 73, 263, 1150, 6700, 54200, 631000, 10700000, 282000000, 12200000000, 890000000000],
 					[0, 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]]
 			}
 		}
@@ -344,7 +344,7 @@ var SKILLTREE = {
 					"This bonus damage counts as an increase in Base Hero Damage, meaning it does not suffer a penalty when converted into Tap Damage via Tap Damage From Heroes."],
 				stats: [["x# War Cry Damage", "+# Inspired Hero Count"]],
 				multipliers: [
-					[1.5, 2, 2.8, 4.2, 6.2, 9.3, 15.1, 26.8, 47.7, 91.8, 191.5, 430.9, 1040, 2910, 8690, 29500, 113000, 513000, 2730000, 16900000],
+					[1.5, 2, 2.8, 4.2, 6.2, 9.3, 15.1, 26.8, 47.7, 91.8, 191.5, 430.9, 1040, 2910, 8690, 29500, 113000, 513000, 2730000, 16890000],
 					[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]]
 			},
 			r1: {
@@ -364,7 +364,7 @@ var SKILLTREE = {
 					["x# Clan Based Damage", "+# Maximum Splash Count"],
 					[null, "+# Max Splash Count"]],
 				multipliers: [
-					[1.5, 2, 2.6, 3.8, 5.4, 7.8, 12.2, 20.6, 34.8, 63.5, 124.8, 263.4, 595.3, 1530, 4210, 13000, 45200, 184000, 866000, 4690000],
+					[1.5, 2, 2.6, 3.8, 5.4, 7.8, 12.2, 20.6, 34.8, 63.5, 124.8, 263.4, 595.3, 1530, 4210, 13000, 45200, 184000, 866000, 4680000],
 					[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24]]
 			},
 			r2: {
@@ -402,7 +402,7 @@ var SKILLTREE = {
 					"Boss countdown timers are temporarily frozen while a Boss Titan is stunned."],
 				stats: [["x# Stun Damage", "+#s Stun Duration"]],
 				multipliers: [
-					[3.5, 9.7, 30.7, 125.2, 643.8, 4540, 46700, 721000, 17100000, 655000000, 43900000000, 5260000000000],
+					[3.5, 9.9, 32.2, 135.8, 728.7, 5430, 59500, 997000, 25900000, 1110000000, 85000000000, 11800000000000],
 					[0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 2]]
 			}
 		}
