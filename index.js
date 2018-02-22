@@ -93,8 +93,8 @@ var CLANSHIP = {
 
 		update: function() {
 			let name = CLANSHIP.DIALOG.inputs[0].children[1].value;
-			if (name.length > 0 && !name.match(/^[\w\-\s()[\]\/\|]+$/)) {
-				CLANSHIP.DIALOG.errorMsg("Build name can only contain letters, numbers and spaces");
+			if (name.length > 0 && !name.match(/^[\w\s()[\]<>/|.\-\\]+$/)) {
+				CLANSHIP.DIALOG.errorMsg("Build name only allows brackets, hyphens, periods and spaces");
 				return false;
 			} else if (name.length > 0 && name !== "Clan Ship") {
 				CLANSHIP.SESSION.update(CLANSHIP.DIALOG.inputs[0].children[1].value);
