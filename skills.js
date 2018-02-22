@@ -612,11 +612,11 @@ var SKILLTREE = {
 					"If your damage bonuses decrease while Shadow Clone is active, its damage will not decrease.",
 					"If your damage bonuses increase while Shadow Clone is active, its damage will increase accordingly."],
 				stats: [
-					["+#s Shadow Clone Duration", "-#s Shadow Clone Cooldown"],
-					["+#s SC Duration", "-#s Shadow Clone Cd"]],
+					["+#s Shadow Clone Duration", "+# Shadow Clone Splash Skip"],
+					["+#s SC Duration", "+# SC Splash Skip"]],
 				multipliers: [
 					[2, 4.5, 8.9, 13.3, 17.7, 24.1, 32.8, 41.5, 52.6, 66.2, 82.5, 101.7, 126.7, 154.9, 189.5, 231, 283.1, 346.7, 422.2, 510],
-					[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]]
+					[0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 18, 20, 24, 29, 34, 40]]
 			},
 			r3: {
 				unlocked: false,
