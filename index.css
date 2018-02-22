@@ -1105,6 +1105,7 @@ main
 	height: 100%;
 	fill: white;
 	transition: transform .1s;
+	border-radius: 0;
 }
 
 .skill-info 
