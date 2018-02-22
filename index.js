@@ -93,7 +93,7 @@ var CLANSHIP = {
 
 		update: function() {
 			let name = CLANSHIP.DIALOG.inputs[0].children[1].value;
-			if (name.length > 0 && !name.match(/^[\w\-\s]+$/)) {
+			if (name.length > 0 && !name.match(/^[\w\-\s()[\]\/\|]+$/)) {
 				CLANSHIP.DIALOG.errorMsg("Build name can only contain letters, numbers and spaces");
 				return false;
 			} else if (name.length > 0 && name !== "Clan Ship") {
